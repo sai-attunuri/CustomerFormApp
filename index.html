@@ -23,7 +23,7 @@
                 name: document.getElementById('name').value,
                 phone: document.getElementById('phone').value,
             };
-            const response = await fetch('https://<your-backend-domain>/postCustomer', {
+            const response = await fetch('http://customerbackendapp1-env.eba-w8mxiqqx.us-east-1.elasticbeanstalk.com/postCustomer', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),
